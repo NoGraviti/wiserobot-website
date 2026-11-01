@@ -1,26 +1,12 @@
 /* WiseRobot — shared styles */
 
+/* Light theme only */
 :root {
   --navy: #0f172a;
   --navy-light: #1e293b;
   --blue: #0f766e;
   --blue-light: #115e59;
   --teal: #0ea5a4;
-  --bg: #0b1220;
-  --bg-soft: #121b2d;
-  --card-bg: #16213380;
-  --border: #263349;
-  --text: #cbd5e1;
-  --text-muted: #8a99b0;
-  --heading: #f1f5f9;
-  --header-bg: rgba(11,18,32,0.85);
-  --link: #2dd4bf;
-  --radius: 10px;
-  --max-width: 1080px;
-  color-scheme: dark;
-}
-
-:root[data-theme="light"] {
   --bg: #ffffff;
   --bg-soft: #f8fafc;
   --card-bg: #ffffff;
@@ -30,6 +16,8 @@
   --heading: #0f172a;
   --header-bg: rgba(255,255,255,0.92);
   --link: #0f766e;
+  --radius: 10px;
+  --max-width: 1080px;
   color-scheme: light;
 }
 
@@ -83,9 +71,7 @@ header.site .wrap {
 .logo span { color: var(--blue); }
 .logo img { height: 34px; width: auto; display: block; }
 footer.site .logo img { height: 26px; }
-header.site .logo .logo-dark-img { display: none; }
-:root[data-theme="light"] header.site .logo .logo-dark-img { display: block; }
-:root[data-theme="light"] header.site .logo .logo-light-img { display: none; }
+header.site .logo .logo-light-img { display: none; }
 
 nav.main-nav {
   display: flex;
@@ -118,25 +104,6 @@ nav.main-nav a:hover { color: var(--link); text-decoration: none; }
   border-radius: 2px;
 }
 
-.theme-toggle {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  border: 1px solid var(--border);
-  background: transparent;
-  color: var(--heading);
-  cursor: pointer;
-  margin-left: 20px;
-  flex-shrink: 0;
-}
-.theme-toggle svg { width: 18px; height: 18px; }
-.theme-toggle .icon-moon { display: none; }
-:root[data-theme="light"] .theme-toggle .icon-sun { display: none; }
-:root[data-theme="light"] .theme-toggle .icon-moon { display: block; }
-
 @media (max-width: 800px) {
   header.site .wrap {
     flex-wrap: wrap;
@@ -160,9 +127,6 @@ nav.main-nav a:hover { color: var(--link); text-decoration: none; }
   }
   nav.main-nav a.btn {
     margin-top: 8px;
-  }
-  .theme-toggle {
-    margin: 14px 0 0;
   }
   .nav-toggle-input:checked ~ nav.main-nav {
     display: flex;
