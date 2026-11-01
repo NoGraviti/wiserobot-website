@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg
-   width="228.4668"
+   width="224.0"
    height="36.895958"
-   viewBox="0 0 228.4668 36.895958"
+   viewBox="0 0 224.0 36.895958"
    version="1.1"
    xmlns="http://www.w3.org/2000/svg">
   <g transform="translate(-159.34216,-68.442344)">
@@ -13,10 +13,10 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:32.8614px;font-family:Montserrat, -apple-system, sans-serif;word-spacing:-3.94758px;fill:#ffffff;stroke-width:2.73844"
-       x="203.97638"
+       x="199.47638"
        y="99.459808"
        id="text344"><tspan
-         x="203.97638"
+         x="199.47638"
          y="99.459808">WiseRobot</tspan></text>
   </g>
 </svg>
