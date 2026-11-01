@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg
-   width="218.4668"
+   width="228.4668"
    height="36.895958"
-   viewBox="0 0 218.4668 36.895958"
+   viewBox="0 0 228.4668 36.895958"
    version="1.1"
    xmlns="http://www.w3.org/2000/svg">
   <g transform="translate(-159.34216,-68.442344)">
@@ -17,6 +17,6 @@
        y="99.459808"
        id="text344"><tspan
          x="203.97638"
-         y="99.459808">wise robot</tspan></text>
+         y="99.459808">WiseRobot</tspan></text>
   </g>
 </svg>
