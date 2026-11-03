@@ -69,8 +69,8 @@ header.site .wrap {
   letter-spacing: -0.02em;
 }
 .logo span { color: var(--blue); }
-.logo img { height: 32.5px; width: auto; display: block; }
-footer.site .logo img { height: 24.9px; }
+.logo img { height: 32.4px; width: auto; display: block; }
+footer.site .logo img { height: 24.8px; }
 header.site .logo .logo-light-img { display: none; }
 
 nav.main-nav {
