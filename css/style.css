@@ -498,7 +498,6 @@ nav.main-nav a:not(.btn):hover::after { transform: scaleX(1); }
   text-transform: none; letter-spacing: 0; font-size: 0.88rem;
 }
 .hero h1 { font-size: 3.1rem; font-weight: 800; line-height: 1.1; }
-.hero h1::after { content: ""; display: block; width: 84px; height: 6px; margin-top: 18px; border-radius: 6px; background: linear-gradient(90deg, var(--coral), #ff9a5c); }
 .hero-image img { filter: drop-shadow(0 20px 30px rgba(15, 118, 110, 0.18)); }
 
 /* Sections */
@@ -548,7 +547,6 @@ footer.site { background: linear-gradient(180deg, #0b4f4a, #083b37); border-top:
 @media (max-width: 800px) {
   .hero { padding: 56px 0 48px; }
   .hero h1 { font-size: 2.1rem; }
-  .hero h1::after { margin-left: auto; margin-right: auto; }
   section h2 { font-size: 1.7rem; }
   .price-card.featured, .price-card.featured:hover { transform: none; }
 }
