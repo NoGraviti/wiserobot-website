@@ -21,6 +21,5 @@ Static HTML/CSS/JS site. Repo: `NoGraviti/wiserobot-website`, branch `main`. Pus
 - Robot mascot: based on the logo head (wide squat head, raised bump with antenna, side pods, tall oval eyes), big head and small pear body, smile, no cheek colour, orange beacon on the antenna, thumbs-up with the right hand, resting hand on the left. Latest version is dark silver with light reflections.
 
 ## Status and open items
-- The robot's hands are still wrong. Hand-drawn SVG attempts never matched the owner's reference image (cartoon white gloves: chunky thumb up with curled finger bumps, and an open resting glove). Decided next step: stop redrawing and use the owner's image file as the hero, exactly as supplied, on a transparent background.
-- Owner still has to decide: use the teal image as it is, or get a dark silver version of the same image first.
+- Hero robot is now `assets/robot-hero.svg` (owner's image recoloured dark silver, orange beacon pulses, eyes blink; image embedded, source copy `assets/robot-silver.png`). Loaded by `index.html` and `rochdale.html` with `?v=28`. The old hand-drawn `assets/hero-illustration.svg` is no longer used.
 - Not yet checked: mobile layout and the other pages after the redesign.
