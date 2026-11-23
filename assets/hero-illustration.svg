@@ -54,6 +54,10 @@
   <!-- eyes: tall ovals -->
   <ellipse class="blink" cx="232" cy="226" rx="17" ry="25" fill="#134e4a"/>
   <ellipse class="blink" cx="328" cy="226" rx="17" ry="25" fill="#134e4a"/>
+  <!-- smile and cheeks -->
+  <path d="M256 268 Q280 292 304 268" fill="none" stroke="#134e4a" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="204" cy="264" r="10" fill="#ff7a59" fill-opacity="0.45"/>
+  <circle cx="356" cy="264" r="10" fill="#ff7a59" fill-opacity="0.45"/>
   </g>
 
   <!-- waving right arm (drawn last so it stays in front of the head) -->
