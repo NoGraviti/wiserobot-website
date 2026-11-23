@@ -23,7 +23,11 @@
 
   <!-- left arm (resting, stubby) -->
   <path d="M236 352 Q214 362 210 384" fill="none" stroke="#134e4a" stroke-width="19" stroke-linecap="round"/>
-  <circle cx="209" cy="388" r="12" fill="#99d5cf"/>
+  <g stroke="#cbd5e1" stroke-width="2" fill="#f8fafc">
+    <ellipse cx="226" cy="382" rx="5.5" ry="9" transform="rotate(35 226 382)"/>
+    <ellipse cx="209" cy="392" rx="14" ry="16"/>
+  </g>
+  <path d="M201 400q8 5 16 0" fill="none" stroke="#cbd5e1" stroke-width="2" stroke-linecap="round"/>
 
   <!-- neck and small pear-shaped body -->
   <rect x="262" y="322" width="36" height="22" rx="8" fill="#134e4a"/>
@@ -61,9 +65,12 @@
   <!-- right arm: thumbs up (drawn last so it stays in front) -->
   <g>
     <path d="M326 354 Q356 362 374 348" fill="none" stroke="#134e4a" stroke-width="19" stroke-linecap="round"/>
-    <rect x="379" y="318" width="12" height="24" rx="6" fill="#99d5cf"/>
-    <rect x="370" y="334" width="30" height="26" rx="12" fill="#99d5cf"/>
-    <path d="M377 347h16" stroke="#134e4a" stroke-opacity="0.25" stroke-width="2.5" stroke-linecap="round"/>
-    <path d="M377 353h14" stroke="#134e4a" stroke-opacity="0.25" stroke-width="2.5" stroke-linecap="round"/>
+    <g stroke="#cbd5e1" stroke-width="2" fill="#f8fafc">
+      <rect x="368" y="334" width="34" height="30" rx="14"/>
+      <rect x="381" y="338" width="23" height="9" rx="4.5"/>
+      <rect x="381" y="346" width="23" height="9" rx="4.5"/>
+      <rect x="381" y="354" width="21" height="9" rx="4.5"/>
+      <rect x="371" y="312" width="14" height="30" rx="7"/>
+    </g>
   </g>
 </svg>
