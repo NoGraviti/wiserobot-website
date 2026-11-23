@@ -1,6 +1,6 @@
 <svg viewBox="0 0 560 460" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="WiseRobot mascot waving, surrounded by email, calendar, tick and hours-saved icons">
   <style>
-    .wave { transform-origin: 340px 350px; animation: wave 2.4s ease-in-out infinite; }
+    .wave { transform-origin: 338px 350px; animation: wave 2.4s ease-in-out infinite; }
     .blink { transform-box: fill-box; transform-origin: center; animation: blink 5s infinite; }
     .bob { animation: bob 3.6s ease-in-out infinite; }
     .bob2 { animation: bob 4.4s ease-in-out infinite reverse; }
@@ -33,7 +33,7 @@
     </g>
   </g>
   <g class="bob">
-    <g transform="translate(474,346)">
+    <g transform="translate(452,330)">
       <circle cx="34" cy="34" r="34" fill="#fff" stroke="#cbd5e1" stroke-width="2"/>
       <circle cx="34" cy="34" r="22" fill="#0f766e"/>
       <path d="M24 35l7 7 13-15" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -83,7 +83,7 @@
   <ellipse class="blink" cx="328" cy="226" rx="17" ry="25" fill="#134e4a"/>
   <!-- waving right arm (drawn last so it stays in front of the head) -->
   <g class="wave">
-    <path d="M338 354 Q428 360 470 306" fill="none" stroke="#14b8a6" stroke-width="24" stroke-linecap="round"/>
-    <circle cx="472" cy="298" r="14" fill="#94a3b8"/>
+    <path d="M338 350 Q386 356 404 322" fill="none" stroke="#14b8a6" stroke-width="22" stroke-linecap="round"/>
+    <circle cx="406" cy="314" r="13" fill="#94a3b8"/>
   </g>
 </svg>
