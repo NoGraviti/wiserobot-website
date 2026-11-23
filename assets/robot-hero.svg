@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 -60 967 1084" role="img" aria-label="WiseRobot mascot giving a thumbs up">
 <style>
-.ring{fill:none;stroke:#ff7a59;stroke-width:6;transform-box:fill-box;transform-origin:center;animation:ring 2s ease-out infinite}
-.lamp{fill:#ff6a45;transform-box:fill-box;transform-origin:center;animation:lamp 2s ease-in-out infinite}
+.ring{fill:none;stroke:#0ea5a4;stroke-width:6;transform-box:fill-box;transform-origin:center;animation:ring 2s ease-out infinite}
+.lamp{fill:#0ea5a4;transform-box:fill-box;transform-origin:center;animation:lamp 2s ease-in-out infinite}
 .lid{transform-box:fill-box;transform-origin:50% 0;transform:scaleY(0);animation:blink 4.5s infinite}
 @keyframes ring{0%{transform:scale(1);opacity:.8}100%{transform:scale(2.4);opacity:0}}
 @keyframes lamp{0%,100%{transform:scale(1)}50%{transform:scale(1.15)}}
