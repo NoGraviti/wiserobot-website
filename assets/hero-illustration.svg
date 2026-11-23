@@ -6,6 +6,14 @@
     @keyframes pulse { 0%,100% { transform: scale(1); } 50% { transform: scale(1.25); } }
     @media (prefers-reduced-motion: reduce) { .blink,.ball { animation: none; } }
   </style>
+  <defs>
+    <!-- dark brushed-silver metal -->
+    <linearGradient id="metal" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0" stop-color="#a3adba"/>
+      <stop offset="0.45" stop-color="#6b7685"/>
+      <stop offset="1" stop-color="#3f4855"/>
+    </linearGradient>
+  </defs>
 
   <!-- ground shadow -->
   <ellipse cx="280" cy="430" rx="84" ry="10" fill="#64748b" fill-opacity="0.18"/>
@@ -17,16 +25,16 @@
   <ellipse cx="304" cy="420" rx="23" ry="10" fill="#64748b"/>
 
   <!-- neck and small pear-shaped body -->
-  <rect x="262" y="322" width="36" height="22" rx="8" fill="#0ea5a4"/>
-  <path d="M280 330 C318 330 336 352 334 380 C332 404 312 414 280 414 C248 414 228 404 226 380 C224 352 242 330 280 330 Z" fill="#0ea5a4"/>
+  <rect x="262" y="322" width="36" height="22" rx="8" fill="url(#metal)"/>
+  <path d="M280 330 C318 330 336 352 334 380 C332 404 312 414 280 414 C248 414 228 404 226 380 C224 352 242 330 280 330 Z" fill="url(#metal)"/>
   <!-- belly highlight -->
-  <path d="M244 356 Q252 342 268 340" fill="none" stroke="#fff" stroke-opacity="0.3" stroke-width="6" stroke-linecap="round"/>
+  <path d="M244 356 Q252 342 268 340" fill="none" stroke="#fff" stroke-opacity="0.5" stroke-width="6" stroke-linecap="round"/>
   <!-- chest panel -->
   <rect x="252" y="354" width="56" height="38" rx="14" fill="#f1f5f9"/>
-  <path d="M268 373l8 8 15-16" fill="none" stroke="#0ea5a4" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M268 373l8 8 15-16" fill="none" stroke="#3f4855" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
 
   <!-- left arm (resting), in front of the body -->
-  <path d="M234 350 Q212 360 206 382" fill="none" stroke="#0ea5a4" stroke-width="19" stroke-linecap="round"/>
+  <path d="M234 350 Q212 360 206 382" fill="none" stroke="url(#metal)" stroke-width="19" stroke-linecap="round"/>
   <!-- resting hand: cartoon mitten glove, thumb facing forward -->
   <g transform="translate(205 399) scale(1.2)" fill="#f8fafc" stroke="#b6c2d1" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round">
     <path d="M-11 -18 C-19 -14 -22 -2 -21 8 C-21 16 -18 22 -12 22 C-9 25 -4 25 -2 22 C1 25 6 25 8 21 C11 19 11 15 10 11 L11 6 C18 8 23 4 20 -2 C18 -7 12 -6 9 -6 L8 -18 Z"/>
@@ -36,31 +44,39 @@
 
   <g transform="translate(280 332) scale(0.8) translate(-280 -332)">
   <!-- antenna: tapered stem + ball -->
-  <path d="M271 96 L289 96 L285 62 L275 62 Z" fill="#0ea5a4"/>
+  <path d="M271 96 L289 96 L285 62 L275 62 Z" fill="url(#metal)"/>
   <circle class="ball" cx="280" cy="52" r="13" fill="#ff7a59"/>
 
   <!-- ears (slanted side pods, like the logo) -->
-  <path d="M130 192 L116 197 Q103 201 102 216 L100 262 Q100 276 112 276 L130 268 Z" fill="#0ea5a4"/>
-  <path d="M430 192 L444 197 Q457 201 458 216 L460 262 Q460 276 448 276 L430 268 Z" fill="#0ea5a4"/>
+  <path d="M130 192 L116 197 Q103 201 102 216 L100 262 Q100 276 112 276 L130 268 Z" fill="url(#metal)"/>
+  <path d="M430 192 L444 197 Q457 201 458 216 L460 262 Q460 276 448 276 L430 268 Z" fill="url(#metal)"/>
 
   <!-- raised top bump -->
-  <path d="M232 128 Q232 100 262 98 L298 98 Q328 100 328 128 Z" fill="#0ea5a4"/>
+  <path d="M232 128 Q232 100 262 98 L298 98 Q328 100 328 128 Z" fill="url(#metal)"/>
 
   <!-- head: thick dark ring, wide and squat -->
-  <path d="M130 230 C130 148 196 112 280 112 C364 112 430 148 430 230 C430 300 372 338 280 338 C188 338 130 300 130 230 Z" fill="#0ea5a4"/>
+  <path d="M130 230 C130 148 196 112 280 112 C364 112 430 148 430 230 C430 300 372 338 280 338 C188 338 130 300 130 230 Z" fill="url(#metal)"/>
   <!-- light face -->
   <path d="M164 232 C164 178 212 146 280 146 C348 146 396 178 396 232 C396 276 350 304 280 304 C210 304 164 276 164 232 Z" fill="#f1f5f9"/>
 
+  <!-- light reflections -->
+  <path d="M152 214 Q160 158 232 128" fill="none" stroke="#fff" stroke-opacity="0.55" stroke-width="9" stroke-linecap="round"/>
+  <circle cx="252" cy="122" r="5" fill="#fff" fill-opacity="0.7"/>
+  <path d="M246 112 Q256 104 272 103" fill="none" stroke="#fff" stroke-opacity="0.5" stroke-width="5" stroke-linecap="round"/>
+  <path d="M110 214 L109 250" fill="none" stroke="#fff" stroke-opacity="0.4" stroke-width="5" stroke-linecap="round"/>
+  <path d="M450 214 L451 250" fill="none" stroke="#fff" stroke-opacity="0.25" stroke-width="5" stroke-linecap="round"/>
+  <path d="M278 68 L276 90" fill="none" stroke="#fff" stroke-opacity="0.5" stroke-width="3" stroke-linecap="round"/>
+
   <!-- eyes: tall ovals -->
-  <ellipse class="blink" cx="232" cy="226" rx="17" ry="25" fill="#0ea5a4"/>
-  <ellipse class="blink" cx="328" cy="226" rx="17" ry="25" fill="#0ea5a4"/>
+  <ellipse class="blink" cx="232" cy="226" rx="17" ry="25" fill="#3f4855"/>
+  <ellipse class="blink" cx="328" cy="226" rx="17" ry="25" fill="#3f4855"/>
   <!-- smile -->
-  <path d="M256 268 Q280 292 304 268" fill="none" stroke="#0ea5a4" stroke-width="7" stroke-linecap="round"/>
+  <path d="M256 268 Q280 292 304 268" fill="none" stroke="#3f4855" stroke-width="7" stroke-linecap="round"/>
   </g>
 
   <!-- right arm: thumbs up (drawn last so it stays in front) -->
   <g>
-    <path d="M326 354 Q358 362 380 352" fill="none" stroke="#0ea5a4" stroke-width="19" stroke-linecap="round"/>
+    <path d="M326 354 Q358 362 380 352" fill="none" stroke="url(#metal)" stroke-width="19" stroke-linecap="round"/>
     <!-- thumbs-up hand: one glove silhouette, thumb up, fingers curled toward the viewer -->
     <g transform="translate(398 352) scale(1.15)" fill="#f8fafc" stroke="#b6c2d1" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round">
       <path d="M2 -19 C12 -22 25 -19 22 -10 C29 -8 28 3 21 3 C27 5 26 14 19 14 C23 17 18 24 10 22 C0 24 -14 22 -18 14 C-22 8 -22 -6 -20 -10 C-18 -13 -14 -14 -12 -15 L-11 -36 C-10 -49 8 -49 6 -37 Z"/>
