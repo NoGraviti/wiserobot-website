@@ -22,12 +22,12 @@
   <ellipse cx="304" cy="420" rx="23" ry="10" fill="#64748b"/>
 
   <!-- left arm (resting, stubby) -->
-  <path d="M236 352 Q214 362 210 384" fill="none" stroke="#0f9488" stroke-width="19" stroke-linecap="round"/>
+  <path d="M236 352 Q214 362 210 384" fill="none" stroke="#134e4a" stroke-width="19" stroke-linecap="round"/>
   <circle cx="209" cy="388" r="12" fill="#99d5cf"/>
 
   <!-- neck and small pear-shaped body -->
   <rect x="262" y="322" width="36" height="22" rx="8" fill="#134e4a"/>
-  <path d="M280 330 C318 330 336 352 334 380 C332 404 312 414 280 414 C248 414 228 404 226 380 C224 352 242 330 280 330 Z" fill="#0f766e"/>
+  <path d="M280 330 C318 330 336 352 334 380 C332 404 312 414 280 414 C248 414 228 404 226 380 C224 352 242 330 280 330 Z" fill="#134e4a"/>
   <!-- belly highlight -->
   <path d="M244 356 Q252 342 268 340" fill="none" stroke="#fff" stroke-opacity="0.3" stroke-width="6" stroke-linecap="round"/>
   <!-- chest panel -->
@@ -62,7 +62,7 @@
 
   <!-- waving right arm (drawn last so it stays in front of the head) -->
   <g class="wave">
-    <path d="M326 352 Q356 358 374 336" fill="none" stroke="#0f9488" stroke-width="19" stroke-linecap="round"/>
+    <path d="M326 352 Q356 358 374 336" fill="none" stroke="#134e4a" stroke-width="19" stroke-linecap="round"/>
     <circle cx="378" cy="328" r="12" fill="#99d5cf"/>
   </g>
 </svg>
