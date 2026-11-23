@@ -1,27 +1,11 @@
 <svg viewBox="110 84 340 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="WiseRobot mascot giving a thumbs up">
   <style>
-    .wave { transform-origin: 326px 352px; animation: wave 2.4s ease-in-out infinite; }
     .blink { transform-box: fill-box; transform-origin: center; animation: blink 5s infinite; }
-    .bob { animation: bob 3.6s ease-in-out infinite; }
-    .bob2 { animation: bob 4.4s ease-in-out infinite reverse; }
     .ball { animation: pulse 2s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
-    @keyframes wave { 0%,100% { transform: rotate(0deg); } 50% { transform: rotate(-18deg); } }
     @keyframes blink { 0%,92%,100% { transform: scaleY(1); } 95% { transform: scaleY(0.1); } }
-    @keyframes bob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-9px); } }
     @keyframes pulse { 0%,100% { transform: scale(1); } 50% { transform: scale(1.25); } }
-    @media (prefers-reduced-motion: reduce) { .wave,.blink,.bob,.bob2,.ball { animation: none; } }
+    @media (prefers-reduced-motion: reduce) { .blink,.ball { animation: none; } }
   </style>
-  <defs>
-    <!-- one cartoon glove fist (four curled fingers), used for both hands -->
-    <g id="fist" stroke="#cbd5e1" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" fill="#f8fafc">
-      <rect x="-23" y="-17" width="48" height="37" rx="17"/>
-      <path d="M-19 -6 Q2 -1 23 -7 M-21 3 Q2 8 24 2 M-17 12 Q2 16 20 11" fill="none"/>
-    </g>
-    <g id="thumb-up" stroke="#cbd5e1" stroke-width="2" fill="#f8fafc">
-      <rect x="-24" y="-48" width="27" height="40" rx="13.5" transform="rotate(-12 -10 -10)"/>
-    </g>
-    <ellipse id="thumb-tucked" cx="-6" cy="-2" rx="14" ry="6.5" transform="rotate(-8 -6 -2)" stroke="#cbd5e1" stroke-width="2" fill="#f8fafc"/>
-  </defs>
 
   <!-- ground shadow -->
   <ellipse cx="280" cy="430" rx="84" ry="10" fill="#64748b" fill-opacity="0.18"/>
@@ -32,12 +16,6 @@
   <ellipse cx="256" cy="420" rx="23" ry="10" fill="#64748b"/>
   <ellipse cx="304" cy="420" rx="23" ry="10" fill="#64748b"/>
 
-  <!-- left arm (resting, stubby) -->
-  <path d="M236 352 Q214 362 210 384" fill="none" stroke="#0ea5a4" stroke-width="19" stroke-linecap="round"/>
-  <g transform="translate(209 392) scale(1.15)">
-    <use href="#fist"/>
-  </g>
-
   <!-- neck and small pear-shaped body -->
   <rect x="262" y="322" width="36" height="22" rx="8" fill="#0ea5a4"/>
   <path d="M280 330 C318 330 336 352 334 380 C332 404 312 414 280 414 C248 414 228 404 226 380 C224 352 242 330 280 330 Z" fill="#0ea5a4"/>
@@ -46,6 +24,14 @@
   <!-- chest panel -->
   <rect x="252" y="354" width="56" height="38" rx="14" fill="#f1f5f9"/>
   <path d="M268 373l8 8 15-16" fill="none" stroke="#0ea5a4" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- left arm (resting), in front of the body -->
+  <path d="M234 350 Q212 360 206 382" fill="none" stroke="#0ea5a4" stroke-width="19" stroke-linecap="round"/>
+  <!-- resting hand: cartoon mitten glove, thumb facing forward -->
+  <g transform="translate(205 396) rotate(8) scale(1.2)" fill="#f8fafc" stroke="#b6c2d1" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M-9 -15 C-18 -12 -19 6 -11 13 C-5 19 7 18 10 11 C12 6 11 1 10 -2 C17 -1 21 -7 16 -11 C13 -13 10 -12 8 -11 L8 -15 Z"/>
+    <path d="M10 -2 C8 -5 8 -8 8 -11" fill="none"/>
+  </g>
 
   <g transform="translate(280 332) scale(0.8) translate(-280 -332)">
   <!-- antenna: tapered stem + ball -->
@@ -73,10 +59,12 @@
 
   <!-- right arm: thumbs up (drawn last so it stays in front) -->
   <g>
-    <path d="M326 354 Q356 362 374 348" fill="none" stroke="#0ea5a4" stroke-width="19" stroke-linecap="round"/>
-    <g transform="translate(386 347) scale(1.15)">
-      <use href="#thumb-up"/>
-      <use href="#fist"/>
+    <path d="M326 354 Q358 362 380 352" fill="none" stroke="#0ea5a4" stroke-width="19" stroke-linecap="round"/>
+    <!-- thumbs-up hand: one glove silhouette, thumb up, fingers curled toward the viewer -->
+    <g transform="translate(398 352) scale(1.15)" fill="#f8fafc" stroke="#b6c2d1" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round">
+      <path d="M-18 12 C-22 4 -22 -8 -14 -14 L-14 -31 C-14 -41 0 -41 0 -31 L0 -16 C8 -18 20 -16 21 -6 C23 6 18 17 6 18 C-4 19 -14 18 -18 12 Z"/>
+      <path d="M-14 -15 Q-7 -12 0 -16" fill="none"/>
+      <path d="M5 -5 Q13 -3 21 -5 M5 3 Q13 5 22 3 M6 11 Q13 12 19 11" fill="none"/>
     </g>
   </g>
 </svg>
