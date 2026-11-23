@@ -536,7 +536,7 @@ form.contact-form input, form.contact-form select, form.contact-form textarea { 
 form.contact-form input:focus, form.contact-form select:focus, form.contact-form textarea:focus { outline: none; border-color: var(--teal); box-shadow: 0 0 0 4px rgba(14, 165, 164, 0.15); }
 
 /* Footer */
-footer.site { background: #444444; border-top: 4px solid var(--coral); }
+footer.site { background: #444444; }
 footer.site .bottom { border-top-color: #666666; }
 
 /* Scroll-in animation (only active when JS has added .js to <html>) */
