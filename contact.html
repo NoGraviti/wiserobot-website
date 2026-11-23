@@ -44,7 +44,8 @@
 
 <section style="padding-top:0;">
   <div class="wrap">
-    <form class="contact-form" action="#" method="POST">
+    <form class="contact-form" action="https://n8n.wiserobot.co.uk/webhook/wiserobot-contact" method="POST">
+      <div style="position:absolute;left:-9999px;" aria-hidden="true"><label for="website">Leave this empty</label><input type="text" id="website" name="website" tabindex="-1" autocomplete="off"></div>
       <label for="name">Your Name</label>
       <input type="text" id="name" name="name" required>
 
@@ -57,7 +58,7 @@
       <label for="task">What's the most repetitive task in your business right now?</label>
       <textarea id="task" name="task" placeholder="e.g. We manually reply to every quote request, and it can take a couple of days..."></textarea>
 
-      <button type="submit" class="btn btn-primary">Send &amp; Book a Call</button>
+      <button type="submit" class="btn btn-primary">Send Message</button>
     </form>
   </div>
 </section>
@@ -86,5 +87,6 @@
 </footer>
 
 <script src="js/nav.js?v=8"></script>
+<script src="js/contact-form.js?v=1"></script>
 </body>
 </html>
