@@ -12,15 +12,15 @@
     @media (prefers-reduced-motion: reduce) { .wave,.blink,.bob,.bob2,.ball { animation: none; } }
   </style>
   <defs>
-    <!-- one cartoon glove fist, used for both hands -->
-    <g id="fist" stroke="#cbd5e1" stroke-width="2" stroke-linejoin="round" fill="#f8fafc">
-      <circle cx="0" cy="0" r="15"/>
-      <circle cx="11" cy="-8" r="7.5"/>
-      <circle cx="13" cy="1" r="7.5"/>
-      <circle cx="11" cy="10" r="7.5"/>
+    <!-- one cartoon glove fist (four curled fingers), used for both hands -->
+    <g id="fist" stroke="#cbd5e1" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" fill="#f8fafc">
+      <rect x="-23" y="-17" width="48" height="37" rx="17"/>
+      <path d="M-19 -6 Q2 -1 23 -7 M-21 3 Q2 8 24 2 M-17 12 Q2 16 20 11" fill="none"/>
     </g>
-    <rect id="thumb-up" x="-13" y="-27" width="20" height="26" rx="10" stroke="#cbd5e1" stroke-width="2" fill="#f8fafc"/>
-    <ellipse id="thumb-tucked" cx="5" cy="1" rx="9" ry="5.5" transform="rotate(24 5 1)" stroke="#cbd5e1" stroke-width="2" fill="#f8fafc"/>
+    <g id="thumb-up" stroke="#cbd5e1" stroke-width="2" fill="#f8fafc">
+      <rect x="-24" y="-48" width="27" height="40" rx="13.5" transform="rotate(-12 -10 -10)"/>
+    </g>
+    <ellipse id="thumb-tucked" cx="-6" cy="-2" rx="14" ry="6.5" transform="rotate(-8 -6 -2)" stroke="#cbd5e1" stroke-width="2" fill="#f8fafc"/>
   </defs>
 
   <!-- ground shadow -->
@@ -34,9 +34,8 @@
 
   <!-- left arm (resting, stubby) -->
   <path d="M236 352 Q214 362 210 384" fill="none" stroke="#134e4a" stroke-width="19" stroke-linecap="round"/>
-  <g transform="translate(209 392) scale(1.15) rotate(70)">
+  <g transform="translate(209 392) scale(1.15)">
     <use href="#fist"/>
-    <use href="#thumb-tucked"/>
   </g>
 
   <!-- neck and small pear-shaped body -->
@@ -76,8 +75,8 @@
   <g>
     <path d="M326 354 Q356 362 374 348" fill="none" stroke="#134e4a" stroke-width="19" stroke-linecap="round"/>
     <g transform="translate(386 347) scale(1.15)">
-      <use href="#fist"/>
       <use href="#thumb-up"/>
+      <use href="#fist"/>
     </g>
   </g>
 </svg>
