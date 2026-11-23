@@ -579,3 +579,22 @@ section.dark a:not(.btn) { color: #9ccfc8; text-decoration: underline; }
 .featured-service img { width: 100%; max-width: 300px; height: auto; flex-shrink: 0; }
 h3.also { margin: 0 0 18px; color: var(--heading); }
 @media (max-width: 800px) { .featured-service { flex-direction: column-reverse; padding: 24px; } }
+
+/* Nav: Marketing dropdown */
+.nav-group { position: relative; margin-left: 28px; }
+.nav-group-label { font: inherit; font-weight: 500; font-size: 0.95rem; color: var(--text); background: none; border: 0; padding: 0; cursor: pointer; }
+.nav-group-label::after { content: "\25BE"; margin-left: 6px; font-size: 0.75em; }
+.nav-group:hover .nav-group-label, .nav-group:focus-within .nav-group-label { color: var(--link); }
+.nav-sub { display: none; position: absolute; top: calc(100% + 8px); left: -14px; min-width: 190px; padding: 8px 0; background: #fff; border: 1px solid rgba(14, 165, 164, 0.25); border-radius: 14px; z-index: 30; }
+.nav-sub::before { content: ""; position: absolute; top: -10px; left: 0; right: 0; height: 10px; }
+.nav-group:hover .nav-sub, .nav-group:focus-within .nav-sub { display: block; }
+nav.main-nav .nav-sub a { display: block; margin: 0; padding: 10px 18px; }
+nav.main-nav .nav-sub a::after { display: none; }
+@media (max-width: 800px) {
+  .nav-group { margin: 0; width: 100%; text-align: center; }
+  .nav-group-label { width: 100%; padding: 12px 0; }
+  .nav-group-label::after { display: none; }
+  .nav-sub { display: block; position: static; min-width: 0; padding: 0; background: none; border: 0; }
+  .nav-sub::before { display: none; }
+  nav.main-nav .nav-sub a { padding: 10px 0; font-size: 0.92rem; color: var(--text-muted); }
+}
