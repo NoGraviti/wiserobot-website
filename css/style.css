@@ -567,3 +567,15 @@ section.dark { background: #444444; }
 section.dark h2, section.dark h3 { color: #fff; }
 section.dark p, section.dark p.section-lead { color: #c9e6e2; }
 section.dark a:not(.btn) { color: #9ccfc8; text-decoration: underline; }
+
+/* Home: featured main service */
+.featured-service { display: flex; align-items: center; gap: 32px; color: inherit; text-decoration: none; margin-bottom: 40px; padding: 36px; }
+.featured-service:hover { text-decoration: none; }
+.featured-service .fs-text { flex: 1; }
+.featured-service .tag { display: inline-block; background: #0ea5a4; color: #fff; padding: 4px 12px; border-radius: 999px; font-size: 0.8rem; font-weight: 700; margin-bottom: 12px; }
+.featured-service h3 { font-size: 1.7rem; margin: 0 0 10px; }
+.featured-service ul { margin: 14px 0; padding-left: 20px; color: var(--text-muted); }
+.featured-service .more { color: #0ea5a4; font-weight: 700; }
+.featured-service img { width: 100%; max-width: 300px; height: auto; flex-shrink: 0; }
+h3.also { margin: 0 0 18px; color: var(--heading); }
+@media (max-width: 800px) { .featured-service { flex-direction: column-reverse; padding: 24px; } }
