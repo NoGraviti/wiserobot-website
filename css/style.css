@@ -514,10 +514,8 @@ section.soft { background: linear-gradient(180deg, var(--bg-soft), #fff); }
 .card:hover, .price-card:hover, .blog-card:hover { transform: translateY(-6px); }
 .card .icon {
   width: 56px; height: 56px; padding: 14px; border-radius: 16px;
-  background: var(--mint); color: var(--blue);
+  background: var(--mint); color: #0ea5a4;
 }
-.grid-3 > .card:nth-child(3n+2) .icon { background: var(--peach); color: #e8552f; }
-.grid-3 > .card:nth-child(3n+3) .icon { background: #d5f1ed; color: #0f766e; }
 
 /* Steps */
 .step .num { width: 46px; height: 46px; font-size: 1.1rem; background: var(--grad); }
