@@ -1,4 +1,4 @@
-<svg viewBox="110 84 340 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="WiseRobot mascot waving hello">
+<svg viewBox="110 84 340 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="WiseRobot mascot giving a thumbs up">
   <style>
     .wave { transform-origin: 326px 352px; animation: wave 2.4s ease-in-out infinite; }
     .blink { transform-box: fill-box; transform-origin: center; animation: blink 5s infinite; }
@@ -60,9 +60,12 @@
   <circle cx="356" cy="264" r="10" fill="#ff7a59" fill-opacity="0.45"/>
   </g>
 
-  <!-- waving right arm (drawn last so it stays in front of the head) -->
-  <g class="wave">
-    <path d="M326 352 Q356 358 374 336" fill="none" stroke="#134e4a" stroke-width="19" stroke-linecap="round"/>
-    <circle cx="378" cy="328" r="12" fill="#99d5cf"/>
+  <!-- right arm: thumbs up (drawn last so it stays in front) -->
+  <g>
+    <path d="M326 354 Q356 362 374 348" fill="none" stroke="#134e4a" stroke-width="19" stroke-linecap="round"/>
+    <rect x="379" y="318" width="12" height="24" rx="6" fill="#99d5cf"/>
+    <rect x="370" y="334" width="30" height="26" rx="12" fill="#99d5cf"/>
+    <path d="M377 347h16" stroke="#134e4a" stroke-opacity="0.25" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M377 353h14" stroke="#134e4a" stroke-opacity="0.25" stroke-width="2.5" stroke-linecap="round"/>
   </g>
 </svg>
