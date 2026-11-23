@@ -33,47 +33,47 @@
   <ellipse cx="304" cy="420" rx="23" ry="10" fill="#64748b"/>
 
   <!-- left arm (resting, stubby) -->
-  <path d="M236 352 Q214 362 210 384" fill="none" stroke="#134e4a" stroke-width="19" stroke-linecap="round"/>
+  <path d="M236 352 Q214 362 210 384" fill="none" stroke="#0ea5a4" stroke-width="19" stroke-linecap="round"/>
   <g transform="translate(209 392) scale(1.15)">
     <use href="#fist"/>
   </g>
 
   <!-- neck and small pear-shaped body -->
-  <rect x="262" y="322" width="36" height="22" rx="8" fill="#134e4a"/>
-  <path d="M280 330 C318 330 336 352 334 380 C332 404 312 414 280 414 C248 414 228 404 226 380 C224 352 242 330 280 330 Z" fill="#134e4a"/>
+  <rect x="262" y="322" width="36" height="22" rx="8" fill="#0ea5a4"/>
+  <path d="M280 330 C318 330 336 352 334 380 C332 404 312 414 280 414 C248 414 228 404 226 380 C224 352 242 330 280 330 Z" fill="#0ea5a4"/>
   <!-- belly highlight -->
   <path d="M244 356 Q252 342 268 340" fill="none" stroke="#fff" stroke-opacity="0.3" stroke-width="6" stroke-linecap="round"/>
   <!-- chest panel -->
   <rect x="252" y="354" width="56" height="38" rx="14" fill="#f1f5f9"/>
-  <path d="M268 373l8 8 15-16" fill="none" stroke="#0f766e" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M268 373l8 8 15-16" fill="none" stroke="#0ea5a4" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
 
   <g transform="translate(280 332) scale(0.8) translate(-280 -332)">
   <!-- antenna: tapered stem + ball -->
-  <path d="M271 96 L289 96 L285 62 L275 62 Z" fill="#134e4a"/>
+  <path d="M271 96 L289 96 L285 62 L275 62 Z" fill="#0ea5a4"/>
   <circle class="ball" cx="280" cy="52" r="13" fill="#ff7a59"/>
 
   <!-- ears (slanted side pods, like the logo) -->
-  <path d="M130 192 L116 197 Q103 201 102 216 L100 262 Q100 276 112 276 L130 268 Z" fill="#134e4a"/>
-  <path d="M430 192 L444 197 Q457 201 458 216 L460 262 Q460 276 448 276 L430 268 Z" fill="#134e4a"/>
+  <path d="M130 192 L116 197 Q103 201 102 216 L100 262 Q100 276 112 276 L130 268 Z" fill="#0ea5a4"/>
+  <path d="M430 192 L444 197 Q457 201 458 216 L460 262 Q460 276 448 276 L430 268 Z" fill="#0ea5a4"/>
 
   <!-- raised top bump -->
-  <path d="M232 128 Q232 100 262 98 L298 98 Q328 100 328 128 Z" fill="#134e4a"/>
+  <path d="M232 128 Q232 100 262 98 L298 98 Q328 100 328 128 Z" fill="#0ea5a4"/>
 
   <!-- head: thick dark ring, wide and squat -->
-  <path d="M130 230 C130 148 196 112 280 112 C364 112 430 148 430 230 C430 300 372 338 280 338 C188 338 130 300 130 230 Z" fill="#134e4a"/>
+  <path d="M130 230 C130 148 196 112 280 112 C364 112 430 148 430 230 C430 300 372 338 280 338 C188 338 130 300 130 230 Z" fill="#0ea5a4"/>
   <!-- light face -->
   <path d="M164 232 C164 178 212 146 280 146 C348 146 396 178 396 232 C396 276 350 304 280 304 C210 304 164 276 164 232 Z" fill="#f1f5f9"/>
 
   <!-- eyes: tall ovals -->
-  <ellipse class="blink" cx="232" cy="226" rx="17" ry="25" fill="#134e4a"/>
-  <ellipse class="blink" cx="328" cy="226" rx="17" ry="25" fill="#134e4a"/>
+  <ellipse class="blink" cx="232" cy="226" rx="17" ry="25" fill="#0ea5a4"/>
+  <ellipse class="blink" cx="328" cy="226" rx="17" ry="25" fill="#0ea5a4"/>
   <!-- smile -->
-  <path d="M256 268 Q280 292 304 268" fill="none" stroke="#134e4a" stroke-width="7" stroke-linecap="round"/>
+  <path d="M256 268 Q280 292 304 268" fill="none" stroke="#0ea5a4" stroke-width="7" stroke-linecap="round"/>
   </g>
 
   <!-- right arm: thumbs up (drawn last so it stays in front) -->
   <g>
-    <path d="M326 354 Q356 362 374 348" fill="none" stroke="#134e4a" stroke-width="19" stroke-linecap="round"/>
+    <path d="M326 354 Q356 362 374 348" fill="none" stroke="#0ea5a4" stroke-width="19" stroke-linecap="round"/>
     <g transform="translate(386 347) scale(1.15)">
       <use href="#thumb-up"/>
       <use href="#fist"/>
