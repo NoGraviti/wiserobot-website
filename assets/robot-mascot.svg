@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 450" role="img" aria-label="WiseRobot mascot giving a thumbs up">
+  <style>
+    .eye { transform-box: fill-box; transform-origin: center; animation: blink 5s infinite; }
+    @keyframes blink {
+      0%, 91%, 100% { transform: scaleY(1); }
+      95% { transform: scaleY(0.08); }
+    }
+    @media (prefers-reduced-motion: reduce) { .eye { animation: none; } }
+  </style>
+  <defs>
+    <!-- White = visible, black = cut out. Everything is one flat colour; detail is cut-outs. -->
+    <mask id="cut" maskUnits="userSpaceOnUse" x="0" y="0" width="400" height="450">
+      <rect width="400" height="450" fill="#000"/>
+
+      <!-- Body: small pear shape -->
+      <path fill="#fff" d="M155 262 C125 262 104 325 104 380 C104 422 145 440 200 440 C255 440 296 422 296 380 C296 325 275 262 245 262 Z"/>
+
+      <!-- Resting arm (robot's left, viewer's right): gap outline, then arm -->
+      <path d="M272 318 L296 372" fill="none" stroke="#000" stroke-width="38" stroke-linecap="round"/>
+      <circle cx="298" cy="384" r="26" fill="#000"/>
+      <path d="M272 318 L296 372" fill="none" stroke="#fff" stroke-width="26" stroke-linecap="round"/>
+      <circle cx="298" cy="384" r="18" fill="#fff"/>
+
+      <!-- Thumbs-up arm (robot's right, viewer's left): gap outline, then arm -->
+      <path d="M128 318 L84 338 L78 296" fill="none" stroke="#000" stroke-width="38" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="44" y="244" width="38" height="52" rx="19" fill="#000"/>
+      <ellipse cx="76" cy="292" rx="34" ry="30" fill="#000"/>
+      <path d="M128 318 L84 338 L78 296" fill="none" stroke="#fff" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+      <ellipse cx="76" cy="290" rx="26" ry="22" fill="#fff"/>
+      <rect x="55" y="250" width="22" height="48" rx="11" fill="#fff"/>
+
+      <!-- Antenna and beacon -->
+      <rect x="196" y="22" width="8" height="46" fill="#fff"/>
+      <circle cx="200" cy="22" r="14" fill="#fff"/>
+
+      <!-- Side pods -->
+      <rect x="30" y="140" width="40" height="66" rx="18" fill="#fff"/>
+      <rect x="330" y="140" width="40" height="66" rx="18" fill="#fff"/>
+
+      <!-- Head: gap outline, bump, then head -->
+      <rect x="54" y="84" width="292" height="176" rx="78" fill="#000"/>
+      <rect x="142" y="52" width="116" height="80" rx="40" fill="#000"/>
+      <rect x="60" y="90" width="280" height="164" rx="72" fill="#fff"/>
+      <rect x="148" y="58" width="104" height="70" rx="35" fill="#fff"/>
+
+      <!-- Eyes (blink) -->
+      <ellipse class="eye" cx="150" cy="168" rx="21" ry="34" fill="#000"/>
+      <ellipse class="eye" cx="250" cy="168" rx="21" ry="34" fill="#000"/>
+
+      <!-- Smile -->
+      <path d="M160 216 Q200 246 240 216" fill="none" stroke="#000" stroke-width="9" stroke-linecap="round"/>
+    </mask>
+  </defs>
+
+  <rect width="400" height="450" fill="#555555" mask="url(#cut)"/>
+</svg>
