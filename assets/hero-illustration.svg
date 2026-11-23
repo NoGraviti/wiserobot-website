@@ -1,11 +1,11 @@
 <svg viewBox="0 0 560 460" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="WiseRobot mascot waving, surrounded by email, calendar, tick and hours-saved icons">
   <style>
-    .wave { transform-origin: 338px 350px; animation: wave 2.4s ease-in-out infinite; }
+    .wave { transform-origin: 326px 352px; animation: wave 2.4s ease-in-out infinite; }
     .blink { transform-box: fill-box; transform-origin: center; animation: blink 5s infinite; }
     .bob { animation: bob 3.6s ease-in-out infinite; }
     .bob2 { animation: bob 4.4s ease-in-out infinite reverse; }
     .ball { animation: pulse 2s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
-    @keyframes wave { 0%,100% { transform: rotate(0deg); } 50% { transform: rotate(-10deg); } }
+    @keyframes wave { 0%,100% { transform: rotate(0deg); } 50% { transform: rotate(-18deg); } }
     @keyframes blink { 0%,92%,100% { transform: scaleY(1); } 95% { transform: scaleY(0.1); } }
     @keyframes bob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-9px); } }
     @keyframes pulse { 0%,100% { transform: scale(1); } 50% { transform: scale(1.25); } }
@@ -48,19 +48,27 @@
     </g>
   </g>
 
-  <!-- ground shadow and feet -->
-  <ellipse cx="280" cy="430" rx="100" ry="11" fill="#64748b" fill-opacity="0.18"/>
-  <ellipse cx="250" cy="418" rx="30" ry="13" fill="#64748b"/>
-  <ellipse cx="310" cy="418" rx="30" ry="13" fill="#64748b"/>
+  <!-- ground shadow -->
+  <ellipse cx="280" cy="430" rx="84" ry="10" fill="#64748b" fill-opacity="0.18"/>
 
-  <!-- left arm (resting) -->
-  <path d="M226 352 Q192 366 186 396" fill="none" stroke="#14b8a6" stroke-width="24" stroke-linecap="round"/>
-  <circle cx="186" cy="398" r="14" fill="#94a3b8"/>
+  <!-- stubby legs and feet -->
+  <rect x="246" y="398" width="26" height="22" rx="10" fill="#475569"/>
+  <rect x="288" y="398" width="26" height="22" rx="10" fill="#475569"/>
+  <ellipse cx="256" cy="420" rx="23" ry="10" fill="#64748b"/>
+  <ellipse cx="304" cy="420" rx="23" ry="10" fill="#64748b"/>
 
-  <!-- body -->
-  <rect x="212" y="308" width="136" height="108" rx="46" fill="#0f766e"/>
-  <circle cx="280" cy="366" r="23" fill="#f1f5f9"/>
-  <path d="M269 366l8 8 14-16" fill="none" stroke="#0f766e" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- left arm (resting, stubby) -->
+  <path d="M236 352 Q214 362 210 384" fill="none" stroke="#0f9488" stroke-width="19" stroke-linecap="round"/>
+  <circle cx="209" cy="388" r="12" fill="#99d5cf"/>
+
+  <!-- neck and small pear-shaped body -->
+  <rect x="262" y="322" width="36" height="22" rx="8" fill="#134e4a"/>
+  <path d="M280 330 C318 330 336 352 334 380 C332 404 312 414 280 414 C248 414 228 404 226 380 C224 352 242 330 280 330 Z" fill="#0f766e"/>
+  <!-- belly highlight -->
+  <path d="M244 356 Q252 342 268 340" fill="none" stroke="#fff" stroke-opacity="0.3" stroke-width="6" stroke-linecap="round"/>
+  <!-- chest panel -->
+  <rect x="252" y="354" width="56" height="38" rx="14" fill="#f1f5f9"/>
+  <path d="M268 373l8 8 15-16" fill="none" stroke="#0f766e" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
 
   <!-- antenna: tapered stem + ball -->
   <path d="M271 96 L289 96 L285 62 L275 62 Z" fill="#134e4a"/>
@@ -83,7 +91,7 @@
   <ellipse class="blink" cx="328" cy="226" rx="17" ry="25" fill="#134e4a"/>
   <!-- waving right arm (drawn last so it stays in front of the head) -->
   <g class="wave">
-    <path d="M338 350 Q386 356 404 322" fill="none" stroke="#14b8a6" stroke-width="22" stroke-linecap="round"/>
-    <circle cx="406" cy="314" r="13" fill="#94a3b8"/>
+    <path d="M326 352 Q356 358 374 336" fill="none" stroke="#0f9488" stroke-width="19" stroke-linecap="round"/>
+    <circle cx="378" cy="328" r="12" fill="#99d5cf"/>
   </g>
 </svg>
