@@ -318,7 +318,6 @@ section p.section-lead {
 }
 .price-card.featured {
   border-color: var(--blue);
-  box-shadow: 0 8px 24px rgba(13,148,136,0.15);
 }
 .price-card .tag {
   font-size: 0.75rem;
@@ -464,8 +463,8 @@ footer.site .bottom {
   --peach: #fff1ea;
   --grad: linear-gradient(135deg, #0ea5a4 0%, #14b8a6 100%);
   --radius: 16px;
-  --shadow: 0 10px 30px rgba(15, 118, 110, 0.10);
-  --shadow-hover: 0 18px 40px rgba(15, 118, 110, 0.18);
+  --shadow: none;
+  --shadow-hover: none;
   --bg-soft: #f3fbf9;
 }
 
@@ -481,10 +480,10 @@ nav.main-nav a:not(.btn)::after {
 nav.main-nav a:not(.btn):hover::after { transform: scaleX(1); }
 
 /* Buttons: pill-shaped, with a friendly lift */
-.btn { border-radius: 999px; padding: 12px 26px; transition: transform .15s ease, box-shadow .15s ease, background .15s ease; }
+.btn { border-radius: 999px; padding: 12px 26px; transition: transform .15s ease, background .15s ease; }
 .btn:hover { transform: translateY(-2px); text-decoration: none; }
-.btn-primary { background: var(--grad); box-shadow: 0 6px 18px rgba(14, 165, 164, 0.35); }
-.btn-primary:hover { background: var(--grad); box-shadow: 0 10px 24px rgba(14, 165, 164, 0.45); }
+.btn-primary { background: var(--grad); }
+.btn-primary:hover { background: var(--grad); }
 .btn-outline { border: 2px solid rgba(14, 165, 164, 0.35); background: #fff; }
 
 /* Hero: soft colourful blobs */
@@ -498,7 +497,7 @@ nav.main-nav a:not(.btn):hover::after { transform: scaleX(1); }
 }
 .hero .eyebrow {
   display: inline-block; background: #fff; color: var(--blue);
-  padding: 7px 16px; border-radius: 999px; box-shadow: var(--shadow);
+  padding: 7px 16px; border-radius: 999px; border: 1px solid rgba(14, 165, 164, 0.3);
   text-transform: none; letter-spacing: 0; font-size: 0.88rem;
 }
 .hero h1 { font-size: 3.1rem; font-weight: 800; line-height: 1.1; }
@@ -513,10 +512,10 @@ section.soft { background: linear-gradient(180deg, var(--bg-soft), #fff); }
 .card, .price-card, .blog-card {
   border: 1px solid rgba(14, 165, 164, 0.14);
   border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  transition: transform .2s ease, box-shadow .2s ease;
+  
+  transition: transform .2s ease;
 }
-.card:hover, .price-card:hover, .blog-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-hover); }
+.card:hover, .price-card:hover, .blog-card:hover { transform: translateY(-6px); }
 .card .icon {
   width: 56px; height: 56px; padding: 14px; border-radius: 16px;
   background: var(--mint); color: var(--blue);
@@ -525,7 +524,7 @@ section.soft { background: linear-gradient(180deg, var(--bg-soft), #fff); }
 .grid-3 > .card:nth-child(3n+3) .icon { background: #d5f1ed; color: #0f766e; }
 
 /* Steps */
-.step .num { width: 46px; height: 46px; font-size: 1.1rem; background: var(--grad); box-shadow: 0 6px 16px rgba(14, 165, 164, 0.35); }
+.step .num { width: 46px; height: 46px; font-size: 1.1rem; background: var(--grad); }
 
 /* Pricing */
 .price-card.featured { border: 2px solid var(--teal); background: linear-gradient(180deg, #f3fbf9, #fff); transform: scale(1.03); }
