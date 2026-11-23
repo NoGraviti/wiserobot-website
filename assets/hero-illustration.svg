@@ -64,7 +64,7 @@
 
   <!-- antenna: tapered stem + ball -->
   <path d="M271 96 L289 96 L285 62 L275 62 Z" fill="#134e4a"/>
-  <circle class="ball" cx="280" cy="52" r="13" fill="#14b8a6"/>
+  <circle class="ball" cx="280" cy="52" r="13" fill="#ff7a59"/>
 
   <!-- ears (slanted side pods, like the logo) -->
   <path d="M130 192 L116 197 Q103 201 102 216 L100 262 Q100 276 112 276 L130 268 Z" fill="#134e4a"/>
