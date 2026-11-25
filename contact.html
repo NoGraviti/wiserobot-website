@@ -3,16 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact WiseRobot | Book a Free Automation Discovery Call</title>
-<meta name="description" content="Get in touch with WiseRobot to discuss automating your business processes. Book a free discovery call — no obligation, no jargon.">
+<title>Contact WiseRobot | Book a Free Discovery Call</title>
+<meta name="description" content="Get in touch with WiseRobot about AI automation, SEO or social media optimisation. Book a free discovery call, no obligation and no jargon.">
 <link rel="canonical" href="https://wiserobot.co.uk/contact.html">
 <link rel="stylesheet" href="css/style.css?v=30">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg?v=2" sizes="any">
 <link rel="icon" type="image/png" href="/assets/favicon-192.png" sizes="192x192">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
-<meta property="og:title" content="Contact WiseRobot | Book a Free Automation Discovery Call">
-<meta property="og:description" content="Get in touch to discuss automating your business processes — free discovery call, no obligation.">
+<meta property="og:title" content="Contact WiseRobot | Book a Free Discovery Call">
+<meta property="og:description" content="Get in touch with WiseRobot about AI automation, SEO or social media optimisation. Book a free discovery call, no obligation and no jargon.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://wiserobot.co.uk/contact.html">
 </head>
@@ -46,8 +46,8 @@
 <section class="hero" style="padding-bottom:56px;">
   <div class="wrap">
     <div class="eyebrow">Get In Touch</div>
-    <h1>Let's find out what's worth automating.</h1>
-    <p class="lead">Fill in the form below with a few details about your business, and we'll get back to you within one working day to arrange a free discovery call.</p>
+    <h1>Let's find out how we can help.</h1>
+    <p class="lead">Tell us a little about your business and what you would like help with, whether that is automating repetitive work or getting found online. We'll get back to you within one working day to arrange a free discovery call.</p>
   </div>
 </section>
 
@@ -64,8 +64,17 @@
       <label for="email">Email Address</label>
       <input type="email" id="email" name="email" required>
 
-      <label for="task">What's the most repetitive task in your business right now?</label>
-      <textarea id="task" name="task" placeholder="e.g. We manually reply to every quote request, and it can take a couple of days..."></textarea>
+      <label for="f-interest">What would you like help with?</label>
+      <select id="f-interest">
+        <option>AI automation (saving time on repetitive work)</option>
+        <option>SEO and getting found on Google and Maps</option>
+        <option>Social media optimisation</option>
+        <option>AI search optimisation</option>
+        <option>Not sure yet</option>
+      </select>
+
+      <label for="task">Tell us more</label>
+      <textarea id="task" name="task" placeholder="e.g. We manually reply to every quote request and it takes days. Or: we want to be found on Google in Rochdale..."></textarea>
 
       <button type="submit" class="btn btn-primary">Send Message</button>
     </form>
@@ -103,6 +112,20 @@
 </footer>
 
 <script src="js/nav.js?v=8"></script>
+<script>
+// Adds the "what would you like help with" choice to the message so the existing enquiry workflow carries it.
+(function () {
+  var form = document.querySelector('.contact-form');
+  if (!form) return;
+  form.addEventListener('submit', function () {
+    var task = form.querySelector('#task');
+    if (task.dataset.packed) return;
+    var interest = form.querySelector('#f-interest').value;
+    task.value = 'Interested in: ' + interest + '\n\n' + task.value;
+    task.dataset.packed = '1';
+  });
+})();
+</script>
 <script src="js/contact-form.js?v=1"></script>
 </body>
 </html>
